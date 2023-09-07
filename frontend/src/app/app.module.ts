@@ -8,13 +8,15 @@ import { ContainerComponent } from 'src/components/container/container.component
 import { PokemonCardComponent } from '../components/pokemon-card/pokemon-card.component';
 import { SearchSectionComponent } from '../components/search-section/search-section.component';
 import { FormsModule } from '@angular/forms';
+import { PokemonDetailsComponent } from '../components/pokemon-details/pokemon-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContainerComponent,
     PokemonCardComponent,
-    SearchSectionComponent
+    SearchSectionComponent,
+    PokemonDetailsComponent
   ],
   imports: [
     BrowserModule,

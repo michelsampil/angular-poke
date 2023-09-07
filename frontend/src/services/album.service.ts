@@ -43,7 +43,7 @@ export class AlbumService {
     await fetch(`${this.url}/${card.id}`, settings);
   }
 
-  async removeOneCard(id: number): Promise<void> {
+  async removeOnePokemonCard(id: number): Promise<void> {
     const settings = {
       method: "DELETE",
       headers: {
