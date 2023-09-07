@@ -18,31 +18,21 @@ export class PokemonDetailsComponent {
     private albumService: AlbumService
   ) { }
 
-  // Save the new description
-  async save() {
-    this.card.pokemonDescription = this.newTaskDescription;
-    this.edit = false
-    this.albumService.editPokemonCard(this.card);
-    location.replace('./home');
-  }
+  // TODO
+  // async save() {
+  // }
 
-  // When delete the card, the page does not refresh, the location import does this automatically
-  async delete() {
-    await this.albumService.removeOnePokemonCard(this.card.id!);
-    location.replace('./home');
-  }
+  // TODO
+  // async delete() {
+  // }
 
-  async getPokemon() {
-    this.route.params.subscribe(async params => {
-      const CardId = params['PokemonId'];
-      console.log('PokemonId: ', CardId);
-      this.card = await this.albumService.getPokemonCardByID(CardId);
-    });
-  }
+  // TODO
+  // async getPokemon() {
+  // }
 
 
   ngOnInit(): void {
-    this.getPokemon();
+    // this.getPokemon();
   }
 
 }

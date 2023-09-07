@@ -14,10 +14,9 @@ export class AlbumService {
     return await response.json();
   }
 
-  async getPokemonCardByID(id: number): Promise<Card> {
-    const response = await fetch(`${this.url}/${id}`);
-    return await response.json();
-  }
+  // async getPokemonCardByID(id: number): Promise<Card> {
+  // TODO
+  // }
 
   async addPokemonCard(card: Card): Promise<void> {
     const settings = {
@@ -31,26 +30,11 @@ export class AlbumService {
     await fetch(this.url, settings);
   }
 
-  async editPokemonCard(card: Card): Promise<void> {
-    const settings = {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(card),
-    }
+  //async editPokemonCard(card: Card): Promise<void> {
+  // TODO
+  //}
 
-    await fetch(`${this.url}/${card.id}`, settings);
-  }
-
-  async removeOnePokemonCard(id: number): Promise<void> {
-    const settings = {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      }
-    }
-
-    await fetch(`${this.url}/${id}`, settings);
-  }
+  //async removeOnePokemonCard(id: number): Promise<void> {
+  // TODO
+  //}
 }
