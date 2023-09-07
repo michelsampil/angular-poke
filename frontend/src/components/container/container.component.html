@@ -1,0 +1,9 @@
+<div>
+  <app-search-section />
+  <div class="container">
+    <div class="centered" *ngIf="cards.length === 0">
+      <h2>No PokeCards yet...</h2>
+    </div>
+    <app-pokemon-card *ngFor="let card of cards" [card]="card" />
+  </div>
+</div>
