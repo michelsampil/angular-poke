@@ -8,4 +8,6 @@ import { Card } from 'src/services/card';
 })
 export class PokemonCardComponent {
   @Input() card!: Card;
+
+
 }
