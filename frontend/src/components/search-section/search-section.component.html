@@ -1,0 +1,16 @@
+<div>
+  <div class="search-section">
+    <div style="display: flex; flex-wrap:wrap;">
+      <img style="flex-basis: 30%;" class="pokeImage"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png"
+        alt="pokeball">
+    </div>
+    <div style="flex-basis: 65%;">
+      <h2 style="display: flex; flex-basis: 100%;"> Pokemon Album</h2>
+      <input class="input" type="text" [(ngModel)]="pokemonName" placeholder="Pokemon Name">
+      <input class="input" type="text" [(ngModel)]="pokemonDescription" placeholder="Pokemon Description">
+      <button [class]="!pokemonName || !pokemonDescription ? 'disabled' : 'enabled'"
+        [disabled]="!pokemonName || !pokemonDescription" (click)="onAddCard()">Add Pokemon!
+      </button>
+    </div>
+  </div>
