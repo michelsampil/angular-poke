@@ -8,19 +8,9 @@ export class PokeApiService {
 
 
   constructor() { }
-  async getPokemonImgByName(pkName: string): Promise<Pokemon> {
+  async getPokemonImgByName(pkName: string) {
 
     const pokeApiUrl = 'https://pokeapi.co/api/v2/pokemon/';
-    const pokemonName = pkName.trim().toLowerCase();
-    const url = `${pokeApiUrl}${pokemonName}`
-
-    const response = await fetch(url);
-    const pokemon = await response.json();
-    return {
-      sprites: {
-        frontImgUrl: pokemon.sprites.front_default,
-        backImgUrl: pokemon.sprites.back_default,
-      }
-    };
+    //TODO
   }
 }
