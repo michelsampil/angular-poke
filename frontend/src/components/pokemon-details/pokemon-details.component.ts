@@ -10,7 +10,6 @@ import { Card } from 'src/services/card';
 })
 export class PokemonDetailsComponent {
   @Input() card!: Card;
-  newTaskDescription: string = "";
   edit: boolean = false;
 
   constructor(

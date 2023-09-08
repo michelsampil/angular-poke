@@ -1,6 +1,6 @@
 export interface Pokemon {
     sprites: {
-        frontImgUrl: string;
-        backImgUrl: string;
+        imgUrl: string;
+        imgUrlBack: string;
     }
 }

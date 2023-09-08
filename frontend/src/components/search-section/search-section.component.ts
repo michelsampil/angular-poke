@@ -20,8 +20,8 @@ export class SearchSectionComponent {
       const pokemon = await this.pokeApiService.getPokemonImgByName(this.pokemonName);
 
       const newCard: Card = {
-        imgURL: pokemon.sprites.frontImgUrl,
-        imgURLback: pokemon.sprites.backImgUrl,
+        imgURL: pokemon.sprites.imgUrl,
+        imgURLback: pokemon.sprites.imgUrlBack,
         pokemonName: this.pokemonName,
         pokemonDescription: this.pokemonDescription,
       }

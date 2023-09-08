@@ -32,14 +32,12 @@
       "imgURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
       "imgURLback": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/151.png",
       "pokemonName": "mew",
-      "taskDescription": "sapbe",
       "id": 20
     },
     {
       "imgURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
       "imgURLback": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/150.png",
       "pokemonName": "mewtwo",
-      "taskDescription": ":D",
       "id": 21,
       "pokemonDescription": "asdfadsf"
     },
@@ -47,14 +45,12 @@
       "imgURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
       "imgURLback": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/149.png",
       "pokemonName": "dragonite",
-      "taskDescription": "asd",
       "id": 22
     },
     {
       "imgURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
       "imgURLback": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/95.png",
       "pokemonName": "onix",
-      "taskDescription": "asd",
       "id": 23
     },
     {
