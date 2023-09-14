@@ -29,7 +29,6 @@ export class PokemonDetailsComponent {
   async getPokemon() {
     this.card = await this.albumService.getPokemonCardByID(13);
     console.log('this card 🔥: ', this.card);
-    console.log('current cardID: ', this.route.params.values.PokemonId);
   }
 
 
