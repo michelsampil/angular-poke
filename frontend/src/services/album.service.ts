@@ -14,9 +14,13 @@ export class AlbumService {
     return await response.json();
   }
 
-  // async getPokemonCardByID(id: number): Promise<Card> {
-  // TODO
-  // }
+  async getPokemonCardByID(id: number): Promise<Card> {
+    // TODO
+    const pokemonUrl = `${this.url}/${id}`;
+    const response = await fetch(pokemonUrl);
+    const data = await response.json();
+    return data;
+  }
 
   async addPokemonCard(card: Card): Promise<void> {
     const settings = {

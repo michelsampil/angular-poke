@@ -9,6 +9,7 @@ import { PokemonCardComponent } from '../components/pokemon-card/pokemon-card.co
 import { SearchSectionComponent } from '../components/search-section/search-section.component';
 import { FormsModule } from '@angular/forms';
 import { PokemonDetailsComponent } from '../components/pokemon-details/pokemon-details.component';
+import { NotFoundComponent } from '../components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PokemonDetailsComponent } from '../components/pokemon-details/pokemon-d
     ContainerComponent,
     PokemonCardComponent,
     SearchSectionComponent,
-    PokemonDetailsComponent
+    PokemonDetailsComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
