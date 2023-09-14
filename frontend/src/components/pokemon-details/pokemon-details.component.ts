@@ -26,12 +26,15 @@ export class PokemonDetailsComponent {
   // }
 
   // TODO
-  // async getPokemon() {
-  // }
+  async getPokemon() {
+    this.card = await this.albumService.getPokemonCardByID(13);
+    console.log('this card 🔥: ', this.card);
+    console.log('current cardID: ', this.route.params.values.PokemonId);
+  }
 
 
   ngOnInit(): void {
-    // this.getPokemon();
+    this.getPokemon();
   }
 
 }
