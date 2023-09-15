@@ -18,17 +18,21 @@ export class PokemonDetailsComponent {
   ) { }
 
   // TODO
-  // async save() {
-  // }
+  async save() {
+  }
 
   // TODO
-  // async delete() {
-  // }
+  async delete() {
+    this.albumService.removeOnePokemonCard(this.card.id!);
+    location.replace('./home')
+  }
 
   // TODO
   async getPokemon() {
-    this.card = await this.albumService.getPokemonCardByID(13);
-    console.log('this card 🔥: ', this.card);
+    this.route.params.subscribe(async params => {
+      const CardId = params['PokemonId'];
+      this.card = await this.albumService.getPokemonCardByID(CardId);
+    });
   }
 
 

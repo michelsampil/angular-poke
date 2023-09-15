@@ -15,13 +15,6 @@
       "id": 14
     },
     {
-      "imgURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
-      "imgURLback": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png",
-      "pokemonName": "pikachu",
-      "id": 16,
-      "pokemonDescription": "Hola pepep"
-    },
-    {
       "imgURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
       "imgURLback": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png",
       "pokemonName": "Bulbasaur",

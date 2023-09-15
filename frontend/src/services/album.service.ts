@@ -38,7 +38,14 @@ export class AlbumService {
   // TODO
   //}
 
-  //async removeOnePokemonCard(id: number): Promise<void> {
-  // TODO
-  //}
+  async removeOnePokemonCard(cardId: number): Promise<void> {
+    const settings = {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+    const pokemonUrl = `${this.url}/${cardId}`;
+    await fetch(pokemonUrl, settings);
+  }
 }

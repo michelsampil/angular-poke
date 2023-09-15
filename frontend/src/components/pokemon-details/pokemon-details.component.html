@@ -1,5 +1,20 @@
 <div class="pokemon-details-wrapper">
-  <h2> {{ this.card.pokemonName }} </h2>
-  <app-pokemon-card [card]="this.card" />
+  <h1 style="flex-basis: 100%;"> {{ this.card.pokemonName }}</h1>
+  <app-pokemon-card [card]="card"></app-pokemon-card>
 
+  <div style="display: flex; flex-wrap: wrap;">
+    <div>
+      <img style="width: 10rem; height: 10rem;" class="pkImage" [src]="this.card.imgURL">
+      <img style="width: 10rem; height: 10rem;" class="pkImage" [src]="this.card.imgURLback">
+    </div>
+  </div>
+  <div class="contenedor">
+    <h2> Description </h2>
+    <textarea class="input" [placeholder]="this.card.pokemonDescription" type="text">
+    </textarea>
+    <div>
+      <button class="btnSave" (click)="save()">Save</button>
+      <button (click)="delete()">Delete Card</button>
+    </div>
+  </div>
 </div>
